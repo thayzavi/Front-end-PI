@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar"; 
 import jsPDF from "jspdf";
-import "../styles/GerarLaudo.css";
+import "../styles/global.css";
 
   const GerarLaudo = () => {
     const [dados, setDados] = useState({
@@ -76,7 +76,7 @@ import "../styles/GerarLaudo.css";
   };
 
   return (
-    <div className="dashboard-container">
+    <div className="container">
       <Sidebar /> {/* Adicionando o Sidebar */}
 
     <div className="gerar-laudo-container">

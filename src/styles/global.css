@@ -1,36 +1,47 @@
-.dashboard-container{
+.container{
     display: flex;
     flex-direction: column;
     padding: 30px;
     margin-left: 200px;
     gap:20px;
 }
-h2{
-    text-align: left;
-    font-size: 28px;
-}
-.subtitulo{
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-.header-dashboard{
+label {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.btn-novo-caso{
-    background-color: darkcyan;
+    flex-direction: column;
+    margin-bottom: 3px;
+    font-size: 16px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+   button {
+    background-color: #4a6572;
     color: white;
-    padding:10px 20px;
-    border:none;
-    border-radius: 8px;
+    padding: 10px;
+    width: 10rem;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-
-}
-.card{
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+  }
+  button:hover {
+    background-color: #9dc88d;
+    transition: background 0.5s ease;
+  }
+  
+  button:hover {
+    background-color: #9dc88d;
+    transition: background 0.5s ease;
+  }
+  .card{
     background-color: rgba(196, 195, 195, 0.212);
     padding: 20px;
     margin: 10px 0px;
@@ -38,24 +49,16 @@ h2{
     box-shadow: 0 1px 2px;
     transition: transfrom 0.3s ease;
 }
-.card:hover{
-    transform: translateY(-5px);
-}
-.card h3{
+h3{
     color: #000000;
     font-size: 20px;
     margin: 0;
 }
-.card p{
+p{
     color: #000000;
     font-size: 14px;
     margin: 4px 0;
 }
-.card a{
-    text-decoration: none;
-    color: #000000;
-}
-
 .status{
     padding: 6px 14px;
     border-radius: 20px;
@@ -64,6 +67,7 @@ h2{
     font-weight: bold;
     display: inline-block;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .status-concluido{
@@ -75,22 +79,26 @@ h2{
 .status-andamento{
     background-color: rgb(130, 130, 247);
 }
-
-.detalhes:hover{
-    text-decoration: underline;
+.detalhes{
+    text-decoration: none;
+    display: flex;
+    color: #000000;
+    margin-left: 70%;
 }
-/* Ajustando a responsividade */
 
 @media (max-width: 1024px) {
-    .dashboard-container {
+    .container {
         margin-left: 14rem;
     }
 }
 
 @media (max-width: 768px) {
-    .dashboard-container {
+    .container {
         margin-left: 70px;
         padding: 10px;
+    }
+    input{
+        width: 90%;
     }
 
     .card {
@@ -99,7 +107,7 @@ h2{
 }
 
 @media (max-width: 480px) {
-    .dashboard-container {
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -115,7 +123,10 @@ h2{
         font-size: 15px; 
     }
 
-    .card p {
+    p {
         font-size: 12px;
+    }
+    input{
+        width: 50%;
     }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
-import "../styles/Detalhamento.css"
+import "../styles/global.css"
 
 
 function DetalhamentoCaso() {
@@ -18,7 +18,7 @@ function DetalhamentoCaso() {
 
   return (
 
-    <div className="dashboard-container">
+    <div className="container">
           <Sidebar /> {/* Adicionando o sidebar */}
 
     <div className="detalhamento-container">

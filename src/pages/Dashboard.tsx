@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar"; 
-import "../styles/Dashboard.css"
+import "../styles/global.css"
 
 function Dashboard() {
 
@@ -51,7 +51,7 @@ function Dashboard() {
     }
   };
   return (
-    <div className="dashboard-container">
+    <div className="container">
       <Sidebar /> {/* Adicionando o sidebar */}
       
       <div className="content-container">
@@ -73,6 +73,9 @@ function Dashboard() {
               <span className={`status ${getStatusClass(caso.status)}`}>
                 {caso.status}
               </span>
+              <Link to={`/detalhamento/${caso.id}`} className="detalhes">
+               Ver detalhes
+           </Link>
             </div>
           ))}
         </div>
