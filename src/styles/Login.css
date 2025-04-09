@@ -1,0 +1,125 @@
+/* Centraliza o login na tela com o fundo cinza */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  width: 70vw; 
+  margin: 30px auto; 
+  background-color:  #f0f0f0;
+  border-radius: 25px;
+}
+
+/* Estiliza o ícone */
+.icon img {
+  border-radius: 30%;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  animation: float 3s infinite ease-in-out;
+}
+
+
+/* Estiliza o formulário */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Ajusta os inputs */
+.login-container label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.login-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Botão estilizado */
+.login-container button {
+  background-color: #4a6572;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.login-container button:hover {
+  background-color: #9dc88d;
+  transition: background 0.5s ease;
+}
+
+
+
+.senha-opcoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.senha-opcoes input[type="checkbox"] {
+  margin-right: 5px; 
+}
+
+.senha-opcoes label {
+  margin-right: auto; 
+}
+
+
+.senha-opcoes .esqueceu, .senha-opcoes .login{
+  margin: 20px;
+  cursor: pointer;
+  text-decoration:underline;
+  
+  
+}
+
+.senha-opcoes .login{
+  text-decoration: none;
+  color: var(--cor-texto-botao-costureira);
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .login-container {
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    width: 70%;
+    text-align: center;
+  }
+
+  .login-container form {
+    width:80%;
+    max-width: 300px;
+  }
+
+
+  .icon img {
+    width: 150px;
+  }
+}

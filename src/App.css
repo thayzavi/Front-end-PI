@@ -1,0 +1,22 @@
+src/App.css
+
+/* Estilos gerais do container principal */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+/* Estilo para o conteúdo principal */
+.dashboard-layout .main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Corpo da página com fonte padrão */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
