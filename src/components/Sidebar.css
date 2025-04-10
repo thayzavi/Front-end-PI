@@ -43,10 +43,11 @@
     margin-right: 10px;
     font-size: 1.2rem;
 }
-.sidebar img{
+.sidebar img {
     width: 90px;
     background-color: white;
     border: none;
+    border-radius: 50%;
 }
 /* responsividade */
 @media (max-width: 768px) {
@@ -69,7 +70,7 @@
     }
     .sidebar img {
         width: 50px;
-        margin-right: 0 ;
+        margin-left: -5px;
         
     }
 }

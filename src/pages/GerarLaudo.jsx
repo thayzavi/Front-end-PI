@@ -94,7 +94,7 @@ import "../styles/global.css";
     <label>Perito Responsável :</label>
     <input type="text" name="perito" onChange={handleChange}></input>
 
-    <h3>Identificação do Examinado</h3>
+    <h5>Identificação do Examinado</h5>
     <label>Nome do Paciente :</label>
     <input type="text" name="numeroPacirnte" onChange={handleChange}></input>
 
@@ -114,14 +114,14 @@ import "../styles/global.css";
     <label>Filiação</label>
     <input type="text" name="feliacao" onChange={handleChange}></input>
 
-    <h3>Informações do Exame</h3>
+    <h5>Informações do Exame</h5>
     <label>Local:</label>
     <input type="text" name="localExame" onChange={handleChange}></input>
 
     <label>Motivos da Perícia:</label>
     <input type="text" name="motivo" onChange={handleChange}></input>
 
-    <h4> Métodos Utilizados:</h4>
+    <h5> Métodos Utilizados:</h5>
     <label>
       <input type="checkbox"
       name="metodos"
@@ -136,10 +136,10 @@ import "../styles/global.css";
       onChange={handleChange} />
       Fotografia
     </label>
-    <h3>Achados Periciais</h3>
+    <h5>Achados Periciais</h5>
     <textarea name="achados" onChange={handleChange}></textarea>
 
-    <h3>Conclução</h3>
+    <h5>Conclução</h5>
     <label>Diagnóstico Parcial</label>
     <textarea name="diagnostico" onChange={handleChange}></textarea>
 

@@ -1,15 +1,22 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f8;
+}
+
+
+
 .container{
     display: flex;
     flex-direction: column;
     padding: 30px;
     margin-left: 200px;
-    gap:20px;
 }
 label {
     display: flex;
     flex-direction: column;
     margin-bottom: 3px;
     font-size: 16px;
+
   }
   
   input {
@@ -42,13 +49,16 @@ label {
     transition: background 0.5s ease;
   }
   .card{
-    background-color: rgba(196, 195, 195, 0.212);
+    background-color: rgba(190, 180, 180, 0.212);
     padding: 20px;
     margin: 10px 0px;
     border-radius: 8px;
-    box-shadow: 0 1px 2px;
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);
     transition: transfrom 0.3s ease;
 }
+.card:hover {
+    transform: scale(1.01);
+  }
 h3{
     color: #000000;
     font-size: 20px;
@@ -110,23 +120,23 @@ p{
     .container {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-left: 90px;
     }
 
     .card {
-        width: 90%; 
+        width: 80%; 
         margin: 10px 0;
+        margin-bottom: 20px;
+        margin-left: 10px;
     }
 
     h2 {
-        font-size: 15px; 
+        font-size: 18px; 
     }
 
     p {
-        font-size: 12px;
+        font-size: 17px;
     }
     input{
-        width: 50%;
+        width: 80%;
     }
 }

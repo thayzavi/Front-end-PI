@@ -30,7 +30,7 @@ function Login() {
   return (
     <div className="login-container">
       {/* Ícone ao lado do formulário */}
-      <div className="icon">
+      <div className="icon-login">
         <img src={icon} alt="icon-app" />
       </div>
 
