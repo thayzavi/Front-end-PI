@@ -1,10 +1,12 @@
 // src/pages/Dashboard.js
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Sidebar from "../components/Sidebar"; 
 import "../styles/global.css"
 
 function Dashboard() {
+
+  const navigate = useNavigate();
 
     const casos = [ //casos
       {
@@ -36,8 +38,6 @@ function Dashboard() {
         status: "Concluído",
       },
   ];
-
-
   const getStatusClass = (status) => { 
     switch (status) {
       case "Concluído":
@@ -50,6 +50,11 @@ function Dashboard() {
         return "";
     }
   };
+
+
+  const handleClick = () => {
+    navigate('/gerar-novo-caso');
+  };
   return (
     <div className="container">
       <Sidebar /> {/* Adicionando o sidebar */}
@@ -61,7 +66,7 @@ function Dashboard() {
         <h2> Casos em andamento </h2>
         <p className="subtitulo"> Casos</p>
        </div>
-      <button className="btn-novo-caso">criar novo caso </button>
+      <button className="btn-novo-caso" onClick={handleClick}>criar novo caso </button>
     </div>
 
       <div className="cards-container">
