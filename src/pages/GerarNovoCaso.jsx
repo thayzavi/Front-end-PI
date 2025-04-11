@@ -24,18 +24,16 @@ function GerarNovoCaso() {
         <h2>Adicionar Novo Caso </h2>
 
        <form onSubmit={handleSubmit}>
-        <label> Número do Caso :</label>
-        <input type="text" name="numeroCaso"></input>
+
+       <label> Nome do Caso :</label>
+        <input type="text"
+         value={nomedocaso}
+         onChange={(e) => setnomedoCaso(e.target.value)}></input>
 
         <label> Responsavel :</label>
         <input type="text"
          value={responsavel}
          onChange={(e) => setResponsavel(e.target.value)}></input>
-
-        <label> Nome do Caso :</label>
-        <input type="text"
-         value={nomedocaso}
-         onChange={(e) => setnomedoCaso(e.target.value)}></input>
 
          <label> Data :</label>
          <input type="date"

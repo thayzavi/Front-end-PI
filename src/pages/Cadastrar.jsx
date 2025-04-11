@@ -23,7 +23,7 @@ function RegisterPerito(){
     e.preventDefault();
 
     try{
-      //func para cadastra o perito({nome, email, cargo})
+      //func para cadastra ({nome, email, cargo})
 
       console.log("Perito cadastrado");
 
@@ -31,7 +31,7 @@ function RegisterPerito(){
       setEmail("");
       setCargo("");
       setAcesso("");
-      showToast("Perito Cadastrado");
+      showToast(" Usuário Cadastrado");
     } catch(err){console.error("Erro ao cadastrar");
       showToast("Erro ao cadastrar");
     }
@@ -45,7 +45,7 @@ function RegisterPerito(){
     <div className="container">
           <Sidebar /> {/* Adicionando o sidebar */}
       
-       <h2>Cadastrar Novo Perito </h2>
+       <h2>Cadastrar Novo usuário</h2>
       {toast.show && <div className={`toast ${toast.type}`}>
         {toast.message}</div>}   
 
@@ -72,20 +72,26 @@ function RegisterPerito(){
 
           <div>
           <label>Cargo:</label>
-            <input
-              type="text"
-              value={cargo}
-              onChange={(e) => setCargo(e.target.value)}
-              required
-              />
+            <select value={cargo}
+               onChange={(e) => 
+              setCargo(e.target.value)} required
+              className="input">
 
-              <label>Tipo de acesso </label>
-              <input
-              type="text"
-              value={acesso}
-              onChange={(e) => setCargo(e.target.value)}
-              required
-              />
+                <option value="">Selecione</option>
+                <option value="Perito">Perito</option>
+                <option value="Assistente">Assistente</option>
+            </select>
+
+            <label>Tipo de acesso:</label>
+            <select value={acesso}
+               onChange={(e) => 
+              setAcesso(e.target.value)} required
+              className="input">
+
+                <option value="">Selecione</option>
+                <option value="Perito">Perito</option>
+                <option value="Assistente">Assistente</option>
+            </select>
           </div> 
 
           <button type="submit">Cadastrar</button>

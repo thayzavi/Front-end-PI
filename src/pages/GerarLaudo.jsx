@@ -53,7 +53,6 @@ import "../styles/global.css";
     doc.text(`Nascimento: ${dados.nascimento}`, 20, 100);
     doc.text(`Sexo: ${dados.sexo}`, 20, 110);
     doc.text(`Documento: ${dados.documento}`, 20, 120);
-    doc.text(`Filtração: ${dados.filiacao}`, 20, 130);
 
     doc.text("INFORMAÇÃO DO EXAME", 20, 150);
     doc.text(`Local: ${dados.localExame}`, 20, 160);
@@ -66,7 +65,6 @@ import "../styles/global.css";
 
     doc.text("CONCLUÇÃO", 20, 250);
     doc.text(`Diagnóstico: ${dados.diagnostico}`, 20, 260);
-    doc.text(`Grau de certeza: ${dados.grauCerteza}`, 20, 267);
 
     doc.text("_______________________", 20, 280);
     doc.text(`${dados.perito}`, 20, 290);
@@ -82,8 +80,20 @@ import "../styles/global.css";
     <div className="gerar-laudo-container">
       <h2>Gerar Laudo</h2>
 
-    <label>Número do Caso :</label>
-    <input type="text" name="numeroCaso" onChange={handleChange}></input>
+          <label>Caso</label>
+          <select
+            name="numeroCaso"
+            value={dados.numeroCaso}
+            onChange={handleChange}
+            className="input"
+          >
+            <option value="">Selecione um caso</option>
+            <option value="Caso 001">Caso 001</option>
+            <option value="Caso 002">Caso 002</option>
+            <option value="Caso 003">Caso 003</option>
+          </select>
+      
+
 
     <label>Data :</label>
     <input type="date" name="data" onChange={handleChange}></input>
@@ -110,9 +120,6 @@ import "../styles/global.css";
 
     <label>Documento:</label>
     <input type="text" name="documento" onChange={handleChange}></input>
-
-    <label>Filiação</label>
-    <input type="text" name="feliacao" onChange={handleChange}></input>
 
     <h5>Informações do Exame</h5>
     <label>Local:</label>
@@ -143,12 +150,6 @@ import "../styles/global.css";
     <label>Diagnóstico Parcial</label>
     <textarea name="diagnostico" onChange={handleChange}></textarea>
 
-    <label>Grau de Certeza</label>
-    <select name="grauCerteza"onChange={handleChange}>
-      <option value="">Selecione</option>
-      <option value="Conclusivo">Conclusivo</option>
-      <option value="Necessita de exames">Necessita de exames</option>
-    </select>
         <button onClick={gerarPDF}>Gerar PDF</button>
       </div>
     </div>

@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .detalhamento-container{
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .detalhamento-container h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .detalhamento-container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .detalhamento-container p {
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  

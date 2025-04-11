@@ -1,0 +1,42 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.493);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 12px 16px;
+    border: 1px solid #ddddddc2;
+    text-align: left;
+  }
+  
+  .admin-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .admin-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .excluir {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 5rem;
+  }
+  
+  .excluir:hover {
+    background-color: #c0392b;
+  }
+  

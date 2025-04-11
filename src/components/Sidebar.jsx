@@ -21,6 +21,7 @@ function Sidebar() {
       {tipoUsuario === "admin" && (
         <>
         <li><Link to="/cadastrar"><i class="fa-regular fa-address-card"></i><span>Cadastrar</span></Link></li>
+        <li><Link to="/admin"><i class="fa-solid fa-address-book"></i><span>Lista</span></Link></li>
         </>
       )}
 

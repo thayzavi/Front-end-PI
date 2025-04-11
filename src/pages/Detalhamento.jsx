@@ -1,11 +1,11 @@
 import React from 'react';
-import AdminTable from '../cardTabela/AdminTable';
+import cardDetalhamento from '../cardDetalhamento/cardDetalhamento';
 import Sidebar from "../components/Sidebar"; 
 
 function App() {
   return (
     <div>
-      <AdminTable />
+      < DetalhamentoCaso/>
       <Sidebar /> {/* Adicionando o sidebar */}
     </div>
   );
